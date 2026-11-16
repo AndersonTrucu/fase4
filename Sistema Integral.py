@@ -156,6 +156,7 @@ class Servicio(ABC):
             raise ValueError(
                 "Los valores del calculo deben ser numericos."
             ) from error
+            
 valores = [duracion, impuesto, descuento]
 
         if not all(math.isfinite(v) for v in valores):
